@@ -16,3 +16,7 @@ add_executable(a2_zad4 Aud_2/a2_zad4.cpp)
 add_executable(a3_zad1 Aud_3/a3_zad1.cpp)
 add_executable(a3_zad2 Aud_3/a3_zad2.cpp)
 
+add_executable(a4_zad1 Aud_4/a4_zad1.cpp)
+add_executable(a4_zad2 Aud_4/a4_zad2.cpp)
+add_executable(a4_zad3 Aud_4/a4_zad3.cpp)
+
