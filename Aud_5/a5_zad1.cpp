@@ -9,15 +9,19 @@ using namespace std;
 class Array {
     int *elements;
     int capacity;
-    int size; //n
+    int size;
+
 public:
     Array(int capacity = 5) {
+        //dynamic allocation
         elements = new int[capacity];
         this->size = 0;
         this->capacity = capacity;
     }
 
+    //copy constructor
     Array(const Array &a) {
+        //new memory allocation
         elements = new int[a.capacity];
         for (int i = 0; i < a.size; i++) {
             elements[i] = a.elements[i];
@@ -44,7 +48,6 @@ public:
         return *this;
     }
 
-    //(Array &a, int n)
     Array &operator-=(int n) {
         int *temp = new int[capacity];
         int newSize = 0;
@@ -68,7 +71,7 @@ public:
         return pom;
     }
 
-    int *getElem() {
+    int *getElements() {
         return elements;
     }
 
@@ -89,35 +92,37 @@ public:
         return capacity;
     }
 
+    //(object + int => Array + int)
     Array operator+(int n) {
         Array result(*this);
         for (int i = 0; i < size; i++) {
             result.elements[i] += n;
         }
 
-        result;
+        return result;
     }
 
     friend ostream &operator<<(ostream &out, Array &a);
-
     friend istream &operator>>(istream &in, Array &a);
 
     ~Array() {
+        //free memory
         delete []elements;
     }
 };
 
+//example usage of operator as a global function
+//(object + object => Array + Array)
 Array operator+(Array &a1, Array &a2) {
     Array result(a1);
-
     for (int i = 0; i < a2.getSize(); i++) {
-        result += a2.getElem()[i];
+        result += a2.getElements()[i];
     }
 
     return result;
 }
 
-
+//is always global (can be friend func)
 ostream &operator<<(ostream &out, Array &a) {
     out << "The capacity is: " << a.capacity << endl;
     out << "The size is: " << a.size << endl;
@@ -132,6 +137,8 @@ ostream &operator<<(ostream &out, Array &a) {
     return out;
 }
 
+
+//is always global (can be friend func)
 istream &operator>>(istream &in, Array &a) {
     int n;
     in >> n;
@@ -140,9 +147,9 @@ istream &operator>>(istream &in, Array &a) {
         in >> number;
         a += number;
     }
-
     return in;
 }
+
 
 int main() {
     Array a;
@@ -163,10 +170,12 @@ int main() {
     cout << b << endl;
 
     a[0] = 9;
-    cout << a << endl;
-    a = (a + 5);
-    cout << "a+5: " << ;
+    cout << a;
+    Array c = (a + 5);
+    cout << "a+5: " << c << endl;
+    Array d = (a + b);
+    cout << "a+b: " << d << endl;
 
-    cout << "a+b: " << (a + b);
+
     return 0;
 }
