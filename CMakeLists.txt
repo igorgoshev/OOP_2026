@@ -23,3 +23,9 @@ add_executable(a4_zad3 Aud_4/a4_zad3.cpp)
 add_executable(a5_zad1 Aud_5/a5_zad1.cpp)
 add_executable(a5_zad2 Aud_5/a5_zad2.cpp)
 
+add_executable(a4_kn_zad2 Aud_5_KN/a4_kn_zad2.cpp)
+add_executable(a5_kn_zad1 Aud_5_KN/a5_kn_zad1.cpp)
+add_executable(a5_kn_zad2 Aud_5_KN/a5_kn_zad2.cpp)
+
+add_executable(k1_zad1 Kol_1/k1_zad1.cpp)
+
