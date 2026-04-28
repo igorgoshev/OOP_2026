@@ -26,6 +26,9 @@ add_executable(a5_zad2 Aud_5/a5_zad2.cpp)
 add_executable(a6_zad1 Aud_6/a6_zad1.cpp)
 add_executable(a6_zad2 Aud_6/a6_zad2.cpp)
 
+add_executable(a7_zad1 Aud_7/a7_zad1.cpp)
+add_executable(a7_zad2 Aud_7/a7_zad2.cpp)
+
 add_executable(a4_kn_zad2 Aud_5_KN/a4_kn_zad2.cpp)
 add_executable(a5_kn_zad1 Aud_5_KN/a5_kn_zad1.cpp)
 add_executable(a5_kn_zad2 Aud_5_KN/a5_kn_zad2.cpp)
