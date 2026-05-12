@@ -35,9 +35,16 @@ add_executable(a8_zad2 Aud_8/a8_zad2.cpp)
 add_executable(a9_zad1 Aud_9/a9_zad1.cpp)
 add_executable(a9_zad2 Aud_9/a9_zad2.cpp)
 
+add_executable(a10_zad1 Aud_10/a10_zad1.cpp)
+add_executable(a10_zad2 Aud_10/a10_zad2.cpp)
+add_executable(a10_zad3 Aud_10/a10_zad3.cpp)
+
 add_executable(a4_kn_zad2 Aud_5_KN/a4_kn_zad2.cpp)
 add_executable(a5_kn_zad1 Aud_5_KN/a5_kn_zad1.cpp)
 add_executable(a5_kn_zad2 Aud_5_KN/a5_kn_zad2.cpp)
+
+add_executable(a10_kn_zad1 Aud_10_KN/a10_kn_zad1.cpp)
+
 
 add_executable(k1_zad1 Kol_1/k1_zad1.cpp)
 
