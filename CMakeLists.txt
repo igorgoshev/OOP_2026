@@ -48,3 +48,9 @@ add_executable(a10_kn_zad1 Aud_10_KN/a10_kn_zad1.cpp)
 
 add_executable(k1_zad1 Kol_1/k1_zad1.cpp)
 
+add_executable(k2_zad1 Kol_2/k2_zad1.cpp)
+add_executable(k2_zad2 Kol_2/k2_zad2.cpp)
+
+add_executable(k2_pit_zad2 Kol_2_PIT/k2_pit_zad2.cpp)
+add_executable(k2_pit_zad1 Kol_2_PIT/k2_pit_zad1.cpp)
+
